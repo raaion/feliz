@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'gaugeregular';
+    src: url('fonts/gauge-webfont.woff2') format('woff2'),
+         url('fonts/gauge-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sansus_webissimoregular';
+    src: url('fonts/sansus-webissimo-webfont.woff2') format('woff2'),
+         url('fonts/sansus-webissimo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'tnua-librelibre';
+    src: url('fonts/tnua-libre-webfont.woff2') format('woff2'),
+         url('fonts/tnua-libre-webfont.woff') format('woff'),
+         url('fonts/tnua-libre-webfont.svg#tnua-librelibre') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: rgb(110, 220, 130);
+    align: center;
+    margin: 0px;
+}
+#msgContainer {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#msgBox {
+    width: 500px;
+    height: 240px;
+    top: 120px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(90, 180, 100);
+    border: solid 2px rgb(180, 240, 160);
+    border-radius: 20px;
+    z-index: 1000;
+    overflow: hidden;
+}
+#msgTitle {
+    text-align: center;
+    font-size: 140%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    position: relative;
+    color: white;
+}
+#scrollRight {
+    background-color: rgb(143, 209, 150);
+    bottom: 10px;
+    right: 10px;
+}
+#scrollLeft {
+    background-color: rgb(143, 209, 150);
+    bottom: 10px;
+    left: 10px;
+}
+#closeBtn {
+    background-color: rgb(143, 209, 150);
+    top: 10px;
+    left: 10px;
+}
+#fbButton {
+    position: absolute;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 4px;
+    font-size: 120%;
+}
+#welcomeTxt {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+#welcomeHeader {
+    margin-top: 40px;
+    font-size: 140%;
+    color: white;
+}
+.square {
+    cursor:pointer;
+    background-color: rgb(68,144,155);
+    border-radius: 10px;
+    z-index: 10;
+}
+.text {
+    z-index: 6;
+    position: relative;
+    font-size: 55%;
+    letter-spacing: 1;
+}
+.genText {
+   font-family: 'tnua-librelibre';
+   font-weight: normal;
+   font-style: normal;
+   letter-spacing: 2px;
+   line-height: 2em;
+}
+.gv { 
+   font-family: 'tnua-librelibre';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 240%;
+   line-height: initial;
+}
+.finished {
+    background-color: rgb(0,128,0);
+}
+.selected {
+    background-color: rgb(10,60,130);
+}
+.cyb {
+   font-family: 'gaugeregular';
+   font-weight: bold;
+   font-style: normal;
+   font-size: 45%;
+   right: 70px;
+   top: 110px;
+   direction: ltr;
+   position: absolute;
+   color: black;
+   text-decoration: none;
+}
+#navBar {
+    width: 455px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    padding: 0px;
+}
+#etcBar {
+    position: relative;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 455px;
+    height: 30px;
+    -webkit-padding-start: 0px;
+    margin: 0px;
+}
+.etcBarItem {
+    display: table-cell;
+    box-sizing: border-box;
+    width: auto;
+}
+#gvHeader {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 130px;
+}
+.squareLink {
+    text-align: center;
+    color: rgb(40, 121, 50);
+    width: 100px;
+    border: 2px rgb(83, 187, 97) solid;
+    border-radius: 10px;
+    background-color: rgb(173, 211, 178);
+    font-size: 70%;
+    height: 24px;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.boardLink {
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: rgb(221, 255, 225);
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+}
+.boardLinkTxt {
+    z-index: 10;
+    position: relative;
+    font-size: 80%;
+}
+.boardLinkFill {
+    bottom: 0px;
+    position: absolute;
+    background-color: rgb(113, 211, 104);
+    z-index: 8;
+    width: 30px;
+}
+.solved {
+    background-color: rgb(180,180,110)
+}
+.unsolved {
+    background-color: rgb(100,190,110)
+}
+.boardPage {
+    top: 70px;
+    position: absolute;
+    width: 500px;
+}
+.categoryText {
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    background: rgb(140, 200, 120);
+    border: solid 2px rgb(180, 240, 160);
+    border-radius: 5px;
+    color: white;
+    resize: none;
+}
+.msgBoxTxt {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.button {
+    border: 2px solid rgb(180,240,160);
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(100,160,80);
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    cursor:pointer;
+}
+.unsolved-groupbox {
+    width: 441px;
+    left: 2px;
+    border-radius: 12px;
+    background-color: rgb(21,177,50);
+    z-index: 9;
+    position: absolute;
+}
+.groupInput {
+    position: absolute;
+    bottom: 3px;
+    right: 20px;
+    height: 30px;
+    width: 350px;
+    background-color: rgb(153, 255, 173);
+    border: solid rgb(19, 57, 27) 1px;
+    border-radius: 10px;
+    font-size: 120%;
+    color: rgb(87, 116, 129);
+}
+.roundButton {
+    position: absolute;
+    bottom: 3px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    font-size: 120%;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+}
+#grid {
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 15px;
+    background-color: rgb(35,78,43);
+    margin: 2px;
+    position: absolute;
+    width: 445px;
+}
+#container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 455px;
+    height: 260px;
+}
+#bottomBar {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 455px;
+    height: 50px;
+}
+#bottomTxt {
+    font-size: 40%;
+    right: 15px;
+    position: absolute;
+    line-height: 10px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+[contenteditable="true"]:focus {
+    outline: none;
+}
