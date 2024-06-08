@@ -96,8 +96,7 @@ function winBox() {
     $('#msgContainer').show().animate({opacity: 1}, 500);
     $('#brighten').show().animate({opacity: 0.8}, 500);
     $('#msgTxt').empty();
-    $('#msgTxt').html('<div style="color: white; font-size: 60%; line-height: normal;"><p class="msgBoxTxt">שלל ברכות ואיחולים. רוצה עוד?</p>' +
-		      '<div class="squareLink" onclick="chooseBoard();">כן!</div>');
+    $('#msgTxt').html('<div style="color: white; font-size: 60%; line-height: normal;"><p class="msgBoxTxt">מזל טוב! ❤️</p>');
 }
 function welcomeMsg() {
     window.history.replaceState("whatevz","פרופסור","/");
@@ -379,7 +378,6 @@ function submitConnection(c) {
 		    localStorage.setItem("solvedBoards",JSON.stringify(solvedBoards));
 		}
 	    }
-	    $.get("cgi-bin/win.py",{id: currBoard});
 	    setTimeout(winBox, 500);
 	}
     }
