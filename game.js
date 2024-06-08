@@ -128,11 +128,10 @@ function boardScroll(left) {
     }
 }
 function chooseBoard() {
-    $.get("cgi-bin/getBoards.py",{}, function(a) {
 	    $('#msgTitle').html('בחרי לוח');
 	    $('#msgContainer').show().animate({opacity: 1}, 300);
 	    $('#brighten').show().animate({opacity: 0.8}, 200);
-	    data = eval('('+a+')');
+	    data ={boards: [57]};
 	    $('#msgTxt').empty();
 	    $('#msgTxt').append('<div id="page0" class="boardPage"></div>');
 	    numPages = 1;
@@ -159,7 +158,6 @@ function chooseBoard() {
 		$('#page' + (numPages - 1)).append('<div class="boardLink ' + (solved ? "solved" : "unsolved") + '" onclick="showBoard('+data.boards[i]+','+(i+1).toString()+');"><div class="boardLinkTxt">'+(i+1)+'</div>' + fill + '</div>');
 		numBoardsInPage ++;
 	    }
-	});
 }
 function showBoard(id, boardNum) {
     closeMsg();
