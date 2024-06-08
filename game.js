@@ -163,8 +163,7 @@ function chooseBoard() {
 }
 function showBoard(id, boardNum) {
     closeMsg();
-    $.get("cgi-bin/retrieve.py",{id: id}, function(a){
-	    dictData = JSON.parse(a);
+	    dictData = {bnum: 1, board: '%5B%5B%22%u05D4%u05D5%u05D3%u05D9%22%2C%22%u05E7%u…F%22%2C%22%u05DE%u05D9%u05DE%u05D5%u05DF%22%5D%5D', connections: '%5B%22%u05DE%u05DC%u05D7%u05DE%u05EA%20%u05D4%u05D…9%u05DC%u05D9%u05DD%20%u05D1%u05D1%u05DF%21%22%5D', hidden: false};
 	    groups=eval(unescape(dictData['board']));
 	    connectionsRaw = eval(unescape(dictData['connections']));
 	    connections = [];
@@ -197,7 +196,6 @@ function showBoard(id, boardNum) {
 	        bnum = "סודי";
 	    }
 	    document.title = "פרופסור - לוח "+bnum
-	});
 }
 function displayGrid(completedGroups, missingConnection) {
     for (var i = 0; i < N; i++) {
