@@ -1,0 +1,75 @@
+<html dir="rtl" lang="he-IL">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport"
+	content="width=device-width, target-densitydpi=160dpi, initial-scale=0.6, maximum-scale=1, user-scalable=no, minimal-ui">
+<link rel="stylesheet" type="text/css" href="game.css" />
+
+<link rel="stylesheet" media="screen"
+	href="http://openfontlibrary.org/face/tnua-libre" rel="stylesheet"
+	type="text/css" />
+<link rel="stylesheet" media="screen"
+	href="http://openfontlibrary.org/face/gauge" rel="stylesheet"
+	type="text/css" />
+<link rel="stylesheet" media="screen"
+	href="http://openfontlibrary.org/face/sansus-webissimo"
+	rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.color-2.1.2.min.js"></script>
+<script type="text/javascript" src="game.js"></script>
+<meta property="og:url" content="http://professor.amiacyb.org" />
+<meta property="og:title" content="פרופסור" />
+<meta property="og:site_name" content="פרופסור" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="משחק ההגיון שהטריף את השכנים" />
+<meta property="og:image"
+	content="http://professor.amiacyb.org/professor.png">
+<meta property="fb:admins" content="552167604" />
+<title>פרופסור</title>
+</head>
+<body id="body" class="genText">
+	<div id="msgContainer" style="opacity: 0.0;">
+		<div id="msgBox">
+			<a id="closeBtn" class="roundButton" onclick="closeMsg();">✕</a>
+			<p id="msgTitle"></p>
+			<p id="msgTxt" class="msgTxt"></p>
+		</div>
+	</div>
+	<div id="brighten"
+		style="display: none; opacity: 0.0; z-index: 999; width: 100%; position: fixed; height: 100%; background-color: white;">
+	</div>
+	<h1 id="gvHeader">
+		<span class="gv">פרופסור,</span> <br>
+		<a href="http://www.amiacyb.org/" class="cyb">am i a cyb.org?</a>
+	</h1>
+	<div id="navBar">
+		<ul id="etcBar">
+			<li class="etcBarItem">
+				<div id="helpButton" class="squareLink" onclick="showHelp();">מה
+					לעשות?</div>
+			</li>
+			<li class="etcBarItem">
+				<div class="squareLink" onclick="chooseBoard()">בחירת לוח</div>
+			</li>
+			<li class="etcBarItem">
+
+				<div class="squareLink" onclick="resetBox();">מהתחלה</div>
+			</li>
+			<li class="etcBarItem">
+				<div id="pointBox" class="squareLink"
+					style="cursor: default; background-color: rgb(199, 231, 203);">0
+					נקודות</div>
+			</li>
+		</ul>
+	</div>
+	<div id="container">
+		<div id="grid" style="height: 250px;"></div>
+	</div>
+	<div id="bottomBar">
+		<p id="bottomTxt">יוסי קומר + תומר עשת. המשחק מבוסס על השעשועון Only Connect שמופק על ידי Presentable עבור BBC</p>
+
+	</div>
+</body>
+</html>
